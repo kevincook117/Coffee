@@ -1,0 +1,490 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*==============================*\
+		MOBILE NAV STYLE
+\*==============================*/
+/* line 26, ../sass/screen.scss */
+.mobile-nav {
+  padding: 0px;
+  z-index: 100;
+  background-color: #176f5b;
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 1px 5px 1px;
+}
+
+/* line 37, ../sass/screen.scss */
+.menu-btn {
+  margin: 50px auto 50px 15px;
+}
+/* line 39, ../sass/screen.scss */
+.menu-btn i {
+  color: white;
+  display: inline;
+  font-size: 50px;
+  float: left;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+/* line 48, ../sass/screen.scss */
+.menu-btn .fa-remove {
+  left: 18px;
+}
+
+/* line 52, ../sass/screen.scss */
+.responsive-menu {
+  display: none;
+}
+/* line 54, ../sass/screen.scss */
+.responsive-menu li {
+  color: white;
+  list-style: none;
+  padding: 5px 0 5px 15px;
+}
+/* line 59, ../sass/screen.scss */
+.responsive-menu li:hover {
+  background-color: #0E473A;
+  width: 100%;
+  color: white;
+}
+
+/* line 65, ../sass/screen.scss */
+.expand {
+  display: block !important;
+}
+
+/*==============================*\
+		 END MOBILE NAV
+\*==============================*/
+/*==============================*\
+		UNIVERSAL STYLES
+\*==============================*/
+/* line 77, ../sass/screen.scss */
+body {
+  background-color: #faebd7;
+  font-family: 'PT Sans Narrow', Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* line 82, ../sass/screen.scss */
+button {
+  background-color: #176f5b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* line 93, ../sass/screen.scss */
+header {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+}
+/* line 97, ../sass/screen.scss */
+header ul {
+  padding-right: 20px;
+  color: white;
+}
+/* line 100, ../sass/screen.scss */
+header ul li {
+  font-family: 'Cookie', Helvetica, sans-serif;
+  list-style: none;
+  display: inline-block;
+  margin: 25px 15px 25px 15px;
+  font-size: 30px;
+  padding: 10px 0 10px 0;
+}
+/* line 107, ../sass/screen.scss */
+header ul li a {
+  background-color: transparent;
+  text-decoration: none;
+  padding: 5px 25px 5px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 500ms;
+}
+/* line 115, ../sass/screen.scss */
+header ul li a:hover {
+  color: white;
+  background-color: #176f5b;
+  transition: 500ms;
+  text-decoration: none;
+}
+/* line 121, ../sass/screen.scss */
+header ul li .active {
+  color: white;
+  background-color: #0E473A;
+  text-decoration: none;
+}
+/* line 132, ../sass/screen.scss */
+header h1 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Cookie', Helvetica, sans-serif;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 0 10px 0;
+}
+
+/* line 140, ../sass/screen.scss */
+.jumbo {
+  background-image: url("https://static.pexels.com/photos/9186/food-beans-coffee-drink.jpg");
+  background-size: cover;
+  background: -webkit-linear-gradient(rgba(39, 34, 10, 0.9) 0%, rgba(39, 34, 10, 0.5) 100%), url("https://static.pexels.com/photos/9186/food-beans-coffee-drink.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 475px;
+  position: fixed relative;
+}
+/* line 150, ../sass/screen.scss */
+.jumbo .jumbo-info {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  text-align: center;
+}
+/* line 155, ../sass/screen.scss */
+.jumbo .jumbo-info h1 {
+  font-family: 'Cookie', Helvetica, sans-serif;
+  font-size: 90px;
+  color: white;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+/* line 162, ../sass/screen.scss */
+.jumbo .jumbo-info h6 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+/* line 168, ../sass/screen.scss */
+.jumbo .jumbo-info a {
+  background-color: #176f5b;
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  color: white;
+  font-family: 'PT Sans Serif', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 500ms;
+}
+/* line 179, ../sass/screen.scss */
+.jumbo .jumbo-info a:hover {
+  background-color: #164936;
+  transition: 500ms;
+}
+
+/* line 185, ../sass/screen.scss */
+.large {
+  width: 97%;
+}
+
+/* line 188, ../sass/screen.scss */
+.textbox {
+  background-color: #faebd7;
+  margin-top: 0px;
+  padding: 30px 20px 30px 20px;
+}
+/* line 192, ../sass/screen.scss */
+.textbox h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 196, ../sass/screen.scss */
+.textbox p {
+  margin: 0px 0px 10px 0px;
+  text-align: left;
+  line-height: 150%;
+}
+/* line 201, ../sass/screen.scss */
+.textbox .bean {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 205, ../sass/screen.scss */
+.textbox .bean img {
+  width: 30px;
+  display: inline;
+  margin-bottom: 10px;
+  float: none;
+  padding: 0px;
+}
+/* line 213, ../sass/screen.scss */
+.textbox img {
+  float: left;
+  width: 200px;
+  padding: 0px 20px 10px 0;
+}
+
+/* line 219, ../sass/screen.scss */
+.titlebox {
+  background-color: #176f5b;
+  margin: 0;
+}
+/* line 222, ../sass/screen.scss */
+.titlebox h4 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  margin: 0px;
+}
+
+/* line 230, ../sass/screen.scss */
+h3 {
+  font-size: 65px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  border-bottom: 5px double gray;
+  padding-bottom: 10px;
+}
+
+/* line 238, ../sass/screen.scss */
+h4 {
+  font-size: 35px;
+  font-family: 'Cookie', Helvetica, sans-serif;
+  color: #4b3832;
+}
+
+/* line 243, ../sass/screen.scss */
+h1 {
+  font-size: 65px;
+  font-family: 'Cookie', Helvetica, sans-serif;
+  color: #176f5b;
+  text-align: center;
+}
+
+/* line 250, ../sass/screen.scss */
+main .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 400px;
+  width: 100%;
+  transition: 500ms;
+}
+/* line 256, ../sass/screen.scss */
+main .bigthumb {
+  background-color: black;
+}
+/* line 259, ../sass/screen.scss */
+main #music {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  background-image: url("https://allyrchapman.files.wordpress.com/2012/04/dsc_0007.jpg");
+  background-size: cover;
+  background-position: center center;
+  transition: 500ms;
+}
+/* line 270, ../sass/screen.scss */
+main #music:hover .overlay {
+  background-color: rgba(23, 111, 91, 0.7);
+  z-index: 999;
+  transition: 500ms;
+}
+
+/* line 277, ../sass/screen.scss */
+#social {
+  background-color: #176f5b;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 15px;
+  color: white;
+}
+/* line 283, ../sass/screen.scss */
+#social i {
+  margin: 0 10px 0 10px;
+}
+/* line 286, ../sass/screen.scss */
+#social a {
+  text-decoration: none;
+}
+/* line 289, ../sass/screen.scss */
+#social a:hover {
+  color: #0E473A;
+}
+
+/* line 293, ../sass/screen.scss */
+table {
+  margin: 15px 0 15px 0;
+}
+/* line 295, ../sass/screen.scss */
+table td {
+  text-align: center;
+  padding: 5px;
+}
+/* line 299, ../sass/screen.scss */
+table .line {
+  border-bottom: 1px solid black;
+}
+/* line 302, ../sass/screen.scss */
+table .line2 {
+  border-bottom: 1px solid gray;
+}
+/* line 306, ../sass/screen.scss */
+table .category th {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+/* line 314, ../sass/screen.scss */
+table .subcategory th {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 15px;
+}
+/* line 319, ../sass/screen.scss */
+table .subcategory td {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 15px;
+}
+/* line 325, ../sass/screen.scss */
+table .desc {
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
+  padding: 5px 0 10px 20px;
+  /*border-bottom: 1px dotted black;*/
+}
+
+/*==============================*\
+	  		 FOOTER
+\*==============================*/
+/* line 338, ../sass/screen.scss */
+footer {
+  background-color: #0E473A;
+  padding: 20px;
+}
+/* line 341, ../sass/screen.scss */
+footer #contact {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  line-height: 150%;
+}
+/* line 346, ../sass/screen.scss */
+footer #contact p {
+  color: white;
+  font-size: 12px;
+}
+
+/*==============================*\
+	  	    END FOOTER
+\*==============================*/
+/*==============================*\
+	  	 PAGE SPEC EDITS
+\*==============================*/
+/* line 366, ../sass/screen.scss */
+.about-styles .jumbo {
+  background-image: url("http://ih0.redbubble.net/image.14679849.1893/flat,1000x1000,075,f.u2.jpg");
+  background: -webkit-linear-gradient(rgba(39, 34, 10, 0.9) 0%, rgba(39, 34, 10, 0.5) 100%), url("http://ih0.redbubble.net/image.14679849.1893/flat,1000x1000,075,f.u2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 375, ../sass/screen.scss */
+.menu-styles .jumbo {
+  background-image: url("http://global.marksandspencer.com/hk/files/2015/01/cafe1.jpg");
+  background: -webkit-linear-gradient(rgba(39, 34, 10, 0.9) 0%, rgba(39, 34, 10, 0.5) 100%), url("http://global.marksandspencer.com/hk/files/2015/01/cafe1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*==============================*\
+	  END UNIVERSAL STYLES
+\*==============================*/
+@media only screen and (max-width: 1024px) {
+  /* line 393, ../sass/screen.scss */
+  .mobile-nav {
+    display: block;
+  }
+
+  /* line 396, ../sass/screen.scss */
+  header {
+    display: none;
+  }
+}
+/*==============================*\
+	  END RESPONSIVE STYLES
+\*==============================*/

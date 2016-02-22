@@ -1,0 +1,407 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$coffee: rgb(39,34,10);
+$coffee-trans1: rgba(39,34,10,0.7);
+$coffee-trans2: rgba(39,34,10,0.5);
+$green: rgba(23,111,91, 1);
+$greent: rgba(23,111,91, 0);
+$greent1: rgba(23,111,91, 0.7);
+$greent2: rgba(23,111,91, 0.5);
+$dgreen: #164936;
+$ddsea: #0E473A;
+$tan: #C7C7A4;
+$offwhite: #faebd7;
+
+/*==============================*\
+		MOBILE NAV STYLE
+\*==============================*/
+
+.mobile-nav{
+    padding: 0px;
+    z-index: 100;
+    background-color: $green;
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 1px 5px 1px;
+}
+
+.menu-btn{
+	margin: 50px auto 50px 15px;
+	i{
+	color: white;
+	display: inline;
+	font-size: 50px;
+	float: left;
+	position: absolute;
+	left: 15px;
+	top: 5px;
+	}
+	.fa-remove{
+		left: 18px;
+	}
+}
+.responsive-menu{
+	display: none;
+	li{
+    color: white;
+    list-style: none;
+    padding: 5px 0 5px 15px;
+	}
+	li:hover{
+    background-color: $ddsea;
+    width: 100%;
+    color: white;
+	}  
+}
+.expand {
+    display: block !important; 
+}
+
+/*==============================*\
+		 END MOBILE NAV
+\*==============================*/
+
+/*==============================*\
+		UNIVERSAL STYLES
+\*==============================*/
+
+body{
+	background-color: $offwhite;
+	font-family:'PT Sans Narrow', Helvetica, sans-serif;
+	font-size:20px;
+}
+button{
+	background-color: $green;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 15px 32px;
+	margin: 5px 0px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+header{
+	height: 100px;
+	position: absolute;
+	width: 100%;
+	ul{
+		padding-right: 20px;
+		color: white;
+		li{
+			font-family:'Cookie', Helvetica, sans-serif;
+			list-style: none;
+			display: inline-block;
+			margin: 25px 15px 25px 15px;
+			font-size: 30px;
+			padding: 10px 0 10px 0;
+			a{
+				background-color: rgba(0,0,0,0);
+				text-decoration: none;
+				padding: 5px 25px 5px 25px;
+				border-radius: 20px;
+				text-decoration: none;
+				transition:500ms;
+			}
+			a:hover{
+				color: white;
+				background-color: $green;
+				transition:500ms;
+				text-decoration: none;
+			}
+			.active{
+				color: white;
+				background-color: $ddsea;
+				text-decoration: none;
+			}
+
+		}
+		
+		
+	}
+	
+	h1{
+		color: white;
+		font-size: 40px;
+		font-family:'Cookie', Helvetica, sans-serif;
+		margin: 20px 20px 20px 20px;
+		padding: 10px 0 10px 0;
+	}
+}
+.jumbo{
+	background-image:url("https://static.pexels.com/photos/9186/food-beans-coffee-drink.jpg");
+	background-size: cover;
+	background: -webkit-linear-gradient(rgba(39,34,10,0.9) 0%,rgba(39,34,10,0.5) 100%), url("https://static.pexels.com/photos/9186/food-beans-coffee-drink.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 475px;
+	position: fixed relative;
+	.jumbo-info{
+		position: absolute;
+		top: 150px;
+		width: 100%;
+		text-align: center;
+		h1{
+			font-family:'Cookie', Helvetica, sans-serif;
+			font-size: 90px;
+  			color: white;
+  			text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+  			margin-bottom: 20px;
+		}
+		h6{
+			color: white;
+			font-size: 20px;
+			letter-spacing: 2px;
+			font-weight: normal;
+		}
+		a{
+			background-color: $green;
+			border-radius: 20px;
+			padding: 10px 25px 10px 25px;
+			color: white;
+			font-family: 'PT Sans Serif', Helvetica, sans-serif;
+			font-weight: normal;
+			font-size: 16px;
+			text-decoration: none;
+			transition:500ms;
+		}
+		a:hover{
+			background-color: $dgreen;
+			transition:500ms;
+		}
+	}		
+}
+.large{
+	width: 97%;
+}
+.textbox{
+	background-color: $offwhite;
+	margin-top: 0px;
+	padding: 30px 20px 30px 20px;
+	h3{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	p{
+		margin: 0px 0px 10px 0px;
+		text-align: left;
+		line-height: 150%;
+	}
+	.bean{
+		text-align: center;
+		margin: 0 auto;
+
+		img{
+			width:30px;
+			display:inline;
+			margin-bottom: 10px;
+			float: none;
+			padding: 0px;
+		}
+	}
+	img{
+		float: left;
+		width: 200px;
+		padding: 0px 20px 10px 0;
+	}	
+}
+.titlebox{
+	background-color: $green;
+	margin:0;
+	h4{
+		color:white;
+		text-align: center;
+		border-bottom: 1px solid gray;
+		padding: 10px 0;
+		margin: 0px;
+	}
+}
+h3{
+	font-size: 65px;
+	font-weight:bold;
+	color:black;
+	letter-spacing: 2px;
+	border-bottom: 5px double gray;
+	padding-bottom: 10px;
+}
+h4{
+	font-size: 35px;
+	font-family:'Cookie', Helvetica, sans-serif;
+	color: #4b3832;
+}
+h1{
+	font-size: 65px;
+	font-family:'Cookie', Helvetica, sans-serif;
+	color: $green;
+	text-align: center;
+}
+main{
+	.overlay{
+		background-color: rgba(0,0,0,0.5);
+		height: 400px;
+		width:100%;
+		transition: 500ms;
+	}
+	.bigthumb{
+		background-color:black;
+	}
+	#music{
+		height: 400px;
+		width: 100%;
+		background-color: black;
+		background-image: url('https://allyrchapman.files.wordpress.com/2012/04/dsc_0007.jpg');
+		background-size: cover;
+	
+		background-position: center center;
+		transition: 500ms;
+	}
+	#music:hover{
+		.overlay{
+			background-color: rgba(23,111,91,0.7);
+			z-index:999;
+			transition: 500ms;
+		}
+	}
+}
+#social{
+	background-color: $green;
+	text-align:center;
+	margin: 0 auto 0 auto;
+	padding: 15px;
+	color: white;
+	i{
+		margin: 0 10px 0 10px;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		color: $ddsea;
+	}
+}
+table{
+	margin: 15px 0 15px 0;
+	td{
+		text-align:center;
+		padding:5px;
+	}
+	.line{
+		border-bottom: 1px solid black;
+	}
+	.line2{
+		border-bottom: 1px solid gray;
+	}
+	.category{
+		th{
+			font-weight:bold;
+			font-size: 30px;
+			padding-bottom:10px;
+		}
+	}
+	.subcategory{
+
+		th{
+			font-weight:bold;
+			font-size:25px;
+			padding-top: 15px;
+		}
+		td{
+			font-weight:bold;
+			font-size:25px;
+			padding-top: 15px;
+		}
+	}
+	.desc{
+		font-style: italic;
+		font-size: 14px;
+		text-align: left;
+		padding: 5px 0 10px 20px;
+		/*border-bottom: 1px dotted black;*/
+	}
+}
+
+/*==============================*\
+	  		 FOOTER
+\*==============================*/
+
+footer{
+	background-color: $ddsea;
+	padding: 20px;
+	#contact{
+		width: 75%;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		line-height: 150%;
+		p{
+			color:white;
+			font-size: 12px;
+		}
+	}	
+}
+
+
+
+
+/*==============================*\
+	  	    END FOOTER
+\*==============================*/
+
+
+/*==============================*\
+	  	 PAGE SPEC EDITS
+\*==============================*/
+
+.about-styles{
+	.jumbo{
+		background-image:url("http://ih0.redbubble.net/image.14679849.1893/flat,1000x1000,075,f.u2.jpg");
+		background: -webkit-linear-gradient(rgba(39,34,10,0.9) 0%,rgba(39,34,10,0.5) 100%), url("http://ih0.redbubble.net/image.14679849.1893/flat,1000x1000,075,f.u2.jpg");
+		background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+}
+.menu-styles{
+	.jumbo{
+		background-image:url("http://global.marksandspencer.com/hk/files/2015/01/cafe1.jpg");
+		background: -webkit-linear-gradient(rgba(39,34,10,0.9) 0%,rgba(39,34,10,0.5) 100%), url("http://global.marksandspencer.com/hk/files/2015/01/cafe1.jpg");
+		background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+}
+
+
+
+
+
+
+/*==============================*\
+	  END UNIVERSAL STYLES
+\*==============================*/
+@media only screen and (max-width: 1024px){
+	.mobile-nav{
+		display: block;
+	}
+	header{
+		display:none;
+	}
+}
+
+
+/*==============================*\
+	  END RESPONSIVE STYLES
+\*==============================*/
+
+
+
